@@ -21,6 +21,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private lateinit var navController:NavController
     var isPlayingAsset = false
+    var created = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -57,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         }
         createBufferQueueAudioPlayer(sampleRate, bufSize)
 
-        var created = false
+
 
 
         if (!created) {
